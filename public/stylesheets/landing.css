@@ -1,0 +1,114 @@
+body {
+  background-color: #000;
+  
+}
+
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+
+#landing-header h1 {
+  color: #fff;
+}
+
+
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite; 
+}
+
+
+
+.slideshow li:nth-child(1) { 
+  background-image: url(https://mackmaids.com/wp-content/uploads/2018/02/Why-Hire-a-Cleaning-Service-During-Your-Spouse%E2%80%99s-Deployment.jpg) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(https://newlookwindows.co.za/wp-content/uploads/2019/05/windowstyles5.jpg);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(https://greencleanwindowwash.com/wp-content/uploads/2016/01/Window-Cleaning-Tips.jpg);
+  animation-delay: 20s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(https://www.trustees.org/wp-content/uploads/2015/07/70-Newhalen_river.jpg);
+  animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(https://static1.squarespace.com/static/5942af072994ca6253840fc1/5942cd313e00be67c048e153/5979f758f5e231fa62dc8f64/1506976348602/iStock-183017735.jpg?format=2500w);
+  animation-delay: 40s; 
+}
+
+
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+
+
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
+
+
+
+.lang {
+    background-color: white;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 3px;
+}
+
+
+.rig {
+    position:absolute;
+    top:0;
+    right:0;
+    margin: 30px 10px 0 0;
+    z-index: 2;
+}

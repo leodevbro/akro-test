@@ -1,0 +1,53 @@
+
+body {
+    background-image: url("https://stmed.net/sites/default/files/water-wallpapers-28099-9007463.jpg");
+    background-attachment: fixed;
+    
+}
+
+.aaa {
+    padding: 12px;
+}
+
+.bbb {
+    padding: 12px;
+}
+
+.ccc {
+    margin: 15px 0 15px 0;
+}
+
+
+.delete-form {
+    display: inline;
+}
+
+
+#ak {
+    font-weight: bolder;
+}
+
+
+#cont {
+    background-color: white;
+    background-image: url("../images/akro2.png");
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+.container {
+    margin-top: 20px;
+}
+
+
+.nav-item {
+    padding-left: 20px;
+}
+
+
+.koka {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,31 @@
+<% include ../partials/header.ejs %>
+
+
+
+<div class="container">
+    <header id="cont" class="jumbotron">
+        <h1>Welcome to Akro Services!</h1>
+        <p>Check out our services we are offering so far, more coming soon...</p>
+    </header>
+    
+    
+    <div class="row">
+        <% seedDBen.forEach((camp) => { %>
+            <div class="col-md-6 col-sm-12 koka">
+                <div class="caption text-center">
+                    <img src="<%= camp.image %>" class="img-thumbnail">
+                    <div>
+                        <h4><%= camp.name %></h4>
+                    </div>
+                    <p>
+                        <!--<a href="/en/srv/<%= camp.iid %>" class="btn btn-outline-dark">More Info</a>-->
+                        <a href="#" class="btn btn-outline-dark">More Info</a>
+                    </p>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+
+<% include ../partials/footer.ejs %>

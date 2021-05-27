@@ -1,0 +1,30 @@
+<% include ../partials/header.ejs %>
+
+
+<div class="container">
+    <header id="cont" class="jumbotron">
+        <h1>აკრო სერვის გრუპი</h1>
+        <p>იხილეთ ჩვენი სერვისები</p>
+    </header>
+    
+    
+    <div class="row">
+        <% seedDBka.forEach((camp) => { %>
+            <div class="col-md-6 col-sm-12 koka">
+                <div class="caption text-center">
+                    <img src="<%= camp.image %>" class="img-thumbnail">
+                    <div>
+                        <h4><%= camp.name %></h4>
+                    </div>
+                    <p>
+                        <!--<a href="/ka/srv/<%= camp.iid %>" class="btn btn-outline-dark">დამატებითი ინფო</a>-->
+                        <a href="#" class="btn btn-outline-dark">დამატებითი ინფო</a>
+                    </p>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+
+<% include ../partials/footer.ejs %>
